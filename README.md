@@ -8,11 +8,6 @@
 #### Link to Source Control Repository
 * 
 
-## How to Run
-* 'phython3 robot.py'
-* Follow the input prompts...
-  * Create your Robots name.
-  * Type Help for options
 
 
 
@@ -24,5 +19,26 @@
 
 
 * 
+
+
+## How to Run
+* `phython3 robot.py`
+* Follow the input prompts...
+
+
+## Dependecies
+* Python3
+* A working computer
+
+## System/Hardware requirements 
+* Intel Core i5 processor or equivalent
+* 4 GB RAM (8 GB preferred)
+* 1 GB available hard disk space
+* Internet connection
+
+## How to use any command line arguments made for the application
+* Type `Help`
+* Type out options in console
+
 
 
