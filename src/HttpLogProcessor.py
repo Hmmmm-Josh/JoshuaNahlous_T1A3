@@ -11,7 +11,9 @@ class HttpLogProcessor:
     self.logs: list[dict[str, str]] = []
     with open(file_path) as file:
       for line in file:
-        self.logs.append(pattern.match(line).groupdict())
+        match = pattern.match(line)
+        if match:
+          self.logs.append(match.groupdict())
 
   def get_total_lines(self) -> int:
     """
@@ -45,7 +47,7 @@ class HttpLogProcessor:
     """
     Count the number of unique IP addresses.
     """
-    unique_ip_adresses = {}
+    unique_ip_adresses = set()
     for line in self.logs:
       unique_ip_adresses.add(line["ip"])
     return len(unique_ip_adresses)
