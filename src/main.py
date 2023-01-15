@@ -1,7 +1,6 @@
 import argparse
 from HttpLogProcessor import HttpLogProcessor
 
-
 class Main:
 
   def __init__(self):
